@@ -1,0 +1,16 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Kenneth Node.js project",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+  	"remoteUser": "node",
+	"postCreateCommand": "sudo npm install -g @vue/cli",
+	"customizations" : {
+		"vscode" : {
+			"extensions":[
+				"Vue.volar"
+			]
+		}
+	}
+}
